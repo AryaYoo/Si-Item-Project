@@ -1,4 +1,9 @@
 @extends('layouts.layout-1')
+
+@section('title')
+List Produk
+@endsection
+
 @section('content')
 <div class="row mb-3 mt-4 text-center">
     <div class="col-md themed-grid-col">
