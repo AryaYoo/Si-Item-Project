@@ -1,4 +1,9 @@
 @extends('layouts.layout-1')
+
+@section('title')
+Dashboard
+@endsection
+
 @section('content')
 
     {{-- Kategori --}}
