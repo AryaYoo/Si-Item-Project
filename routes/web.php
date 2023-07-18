@@ -22,3 +22,17 @@ Route::get('/product', function () {
 Route::get('/profile', function () {
     return view('user/index');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/login', [LoginController::class, 'authenticate']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::redirect('/', '/login');
+
+
