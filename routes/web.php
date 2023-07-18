@@ -23,7 +23,16 @@ Route::get('/profile', function () {
     return view('user/index');
 });
 
-//==================Routing list admin dasboard==============
-Route::get('/admin', function () {
-    return view('admin/dashboard');
-});
+ //==================Routing list admin dasboard==============
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/login', [LoginController::class, 'authenticate']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::redirect('/', '/login');
+
