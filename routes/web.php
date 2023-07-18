@@ -22,3 +22,8 @@ Route::get('/product', function () {
 Route::get('/profile', function () {
     return view('user/index');
 });
+
+//==================Routing list admin dasboard==============
+Route::get('/admin', function () {
+    return view('admin/dashboard');
+});
