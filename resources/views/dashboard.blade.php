@@ -14,21 +14,27 @@ Dashboard
         <div class="container mt-5">
             <div class="row">
                 <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">HANDPHONE</h5>
-                    </div>
+                    <a href="{{ url('/product') }}" class="btn-category">
+                        <div class="card-body">
+                            <h5 class="card-title">HANDPHONE</h5>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">LAPTOP</h5>
-                    </div>
+                    <a href="{{ url('/product') }}" class="btn-category">
+                        <div class="card-body">
+                            <h5 class="card-title">LAPTOP</h5>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">DESKTOP</h5>
-                    </div>
+                    <a href="{{ url('/product') }}" class="btn-category">
+                        <div class="card-body">
+                            <h5 class="card-title">DESKTOP</h5>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
