@@ -2,7 +2,7 @@
     <div class="container">
         <div class="container-fluid d-grid gap-3 align-items-center justify-content-between"
             style="grid-template-columns: 1fr 2fr;">
-            <a href="{{ url('/') }}"
+            <a href="{{ url('/admin') }}"
                 class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
                 <img src="{{Vite::asset('resources/images/Logo-SiBarang.png')}}" class="bi me-2" width="70" height="70">
             </a>
