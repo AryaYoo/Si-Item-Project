@@ -16,6 +16,10 @@ Route::get('/product', function () {
 });
 // Route::get('products', [ProductController::class, 'index']);
 
+Route::get('/upload', function () {
+    return view('products/upload');
+});
+
 
 
 //==================Routing list user index====================
