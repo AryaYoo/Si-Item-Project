@@ -6,3 +6,37 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+.card {
+    margin: auto;
+}
+
+.card-bg {
+    background-image: url("/public/images/handphone.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-color: black;
+}
+.card-bg-1 {
+    background-image: url("/public/images/laptop.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-color: black;
+}
+.card-bg-2 {
+    background-image: url("/public/images/elektronik-lain.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-color: black;
+}
+
+.card-body {
+    height: 360px;
+}
+
+.card-title {
+    color: white;
+    font-size: 20px;
+    margin-top: 60%;
+}
+
