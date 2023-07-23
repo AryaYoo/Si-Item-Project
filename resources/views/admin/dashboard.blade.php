@@ -11,7 +11,7 @@ dashboard admin
         <div class="container mt-5">
             <br>
             <div class="row">
-                <div class="card text-center mb-3" style="width: 18rem;">
+                <div class="card text-center mb-3" style="width: 18rem; background-color:#000000;">
                     <a href="{{ url('/order') }}" class="btn-category">
                         <div class="card-body">
                             <h5 class="card-title">LIST ORDER</h5>
@@ -19,16 +19,16 @@ dashboard admin
                     </a>
                 </div>
 
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <a href="{{ url('/product') }}" class="btn-category">
-                        <div class="card-body">
+                <div class="card text-center mb-3" style="width: 18rem; background-color:#000000;">
+                    <a href="{{ url('#') }}" class="btn-category">
+                        <div class="card-body" >
                             <h5 class="card-title">EDIT ARTIKEL</h5>
                         </div>
                     </a>
                 </div>
 
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <a href="{{ url('/product') }}" class="btn-category">
+                <div class="card text-center mb-3" style="width: 18rem; background-color:#000000;">
+                    <a href="{{ url('#') }}" class="btn-category">
                         <div class="card-body">
                             <h5 class="card-title">EDIT FAQ</h5>
                         </div>

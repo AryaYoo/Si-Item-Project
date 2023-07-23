@@ -27,7 +27,7 @@ Route::get('/profile', function () {
     return view('user/index');
 });
 
-//==================Routing list admin dasboard==============
+//==================Routing list admin dasboard===============
 Route::get('/admin', function () {
     return view('admin/dashboard');
 });
@@ -35,3 +35,8 @@ Route::get('/admin', function () {
 Route::get('/order', function () {
     return view('admin/confirm');
 });
+
+//==================Routing list admin dasboard===============
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
