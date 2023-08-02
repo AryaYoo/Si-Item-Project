@@ -19,7 +19,14 @@ List Produk
     </div>
 </div>
 <div class="position-fixed bottom-0 end-0 p-3">
-    <a href="{{ url('/upload') }}" class="btn btn-warning">
+    <a
+    @guest
+    href="{{('/login')}}"
+    @else
+    href="{{ url('/upload') }}"
+    @endguest
+
+    class="btn btn-warning">
         ADD
     </a>
 </div>

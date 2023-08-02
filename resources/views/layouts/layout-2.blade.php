@@ -15,7 +15,11 @@
 
 <body> {{-- class="custom-bg" --}}
 
-    @include('layouts.main.header2')
+    @guest
+        @include('layouts.main.header')
+    @else
+        @include('layouts.main.header2')
+    @endguest
 
     {{-- ini  nvigation 2 --}}
     @yield('navigation2')
@@ -25,7 +29,6 @@
         @yield('content')
 
         @include('layouts.main.footer')
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
