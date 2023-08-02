@@ -29,19 +29,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-
-                        <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                Sign out
-                            </a>
-                        </li>
-
-
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        </div>
-
+                        <li><a class="dropdown-item" href="#logout">Sign out</a></li>
                     </ul>
                 </div>
             </div>
