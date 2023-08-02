@@ -14,7 +14,6 @@ Route::get('/', function () {
 Route::get('/product', function () {
     return view('products/index');
 });
-
 // Route::get('products', [ProductController::class, 'index']);
 
 Route::get('/upload', function () {

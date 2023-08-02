@@ -15,12 +15,7 @@
 
 <body> {{-- class="custom-bg" --}}
 
-    @guest
-        @include('layouts.main.header')
-    @else
-        @include('layouts.main.header2')
-    @endguest
-
+    @include('layouts.main.header')
 
     {{-- ini  nvigation 2 --}}
     @yield('navigation2')
