@@ -80,3 +80,6 @@ Route::get('products/{category}/{slug}/edit', [ProductController::class, 'edit']
 Route::patch('products/{category}/{id}', [ProductController::class, 'update'])->name('products.update');
 
 Route::get('order/{productId}', [OrderController::class, 'showOrderForm'])->name('order.form');
+Route::get('/faq', function () {
+    return view('faq');
+});
