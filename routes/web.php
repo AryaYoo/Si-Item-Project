@@ -4,7 +4,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\DasboardController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\OrderController;
@@ -68,7 +68,8 @@ Route::get('register', [AuthController::class, 'register_form']);
 Route::post('register', [AuthController::class, 'register']);
 Route::get('profile/{id}', [UserController::class, 'view']);
 
-Route::get('dashboard', [DasboardController::class, 'index']);
+Route::get('dashboard', [DashboardController::class, 'index']);
+
 
 Route::get('products', [ProductController::class, 'index']);
 Route::get('products/create', [ProductController::class, 'create']);
