@@ -32,9 +32,9 @@
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
                 <select class="form-select" id="category" name="category" aria-valuetext="{{ $product->category }}">
-                    <option value="air tawar" @if ($product->category === 'air tawar') selected @endif>Air Tawar</option>
-                    <option value="air laut" @if ($product->category === 'air laut') selected @endif>Air Laut</option>
-                    <option value="tanaman air" @if ($product->category === 'tanaman air') selected @endif>Tanaman Air</option>
+                    <option value="handphone" @if ($product->category === 'handphone') selected @endif>Handphone</option>
+                    <option value="laptop" @if ($product->category === 'laptop') selected @endif>Laptop</option>
+                    <option value="elektronik_lain" @if ($product->category === 'elektronik_lain') selected @endif>Elektronik Lain</option>
                 </select>
                 @if ($errors->has('category'))
                     <span class="text-danger">{{ $errors->first('category') }} </span>
