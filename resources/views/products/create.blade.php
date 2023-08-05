@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Si-Item | Create Product</title>
+    <title>Box Of Fish | Create Product</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -25,9 +25,9 @@
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
                 <select class="form-select" id="category" name="category">
-                    <option value="air tawar">Air Tawar</option>
-                    <option value="air laut">Air Laut</option>
-                    <option value="tanaman air">Tanaman Air</option>
+                    <option value="handphone">Handphone</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="elektronik lain">Elektronik Lain</option>
                 </select>
                 @if ($errors->has('category'))
                     <span class="text-danger">{{ $errors->first('category') }} </span>
@@ -48,10 +48,10 @@
                 @endif
             </div>
             <div class="mb-3">
-                <label for="order_type" class="form-label">Order Type</label>
+                <label for="order_type" class="form-label">Condition</label>
                 <select class="form-select" id="order_type" name="order_type">
-                    <option value="wts">Want to Sell</option>
-                    <option value="wtb">Want to Buy</option>
+                    <option value="new">Baru</option>
+                    <option value="used">Bekas</option>
                 </select>
                 @if ($errors->has('order_type'))
                     <span class="text-danger">{{ $errors->first('order_type') }} </span>
