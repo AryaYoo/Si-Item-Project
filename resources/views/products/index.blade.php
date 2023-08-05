@@ -1,6 +1,8 @@
 @extends('layouts.product')
 
-@section('title', 'Box Of Fish | Products')
+
+@section('title', 'Si-Item | Products')
+
 
 @section('content')
 
@@ -13,8 +15,10 @@
                     <div class="col-md-4 mt-2">
                         <h6 class="mb-3">Order Type</h6>
                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        
                             <option value="new">Baru</option>
                             <option value="used">Bekas</option>
+
                         </select>
                     </div>
 

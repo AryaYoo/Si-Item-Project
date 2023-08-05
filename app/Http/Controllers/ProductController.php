@@ -40,9 +40,6 @@ class ProductController extends Controller
         ];
 
         return view('products.index', $view_data);
-
-        //filter gender :
-
     }
 
     public function view(string $category)
