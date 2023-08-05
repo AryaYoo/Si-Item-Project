@@ -10,18 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
-
-    <style>
-        .title-style {
-            margin-top: 50%;
-            font-size: 30px;
-            font-weight: 500;
-        }
-
-        .btn-style-card {
-            margin-top: 45%;
-        }
-    </style>
     @vite('resources/sass/app.scss')
 </head>
 
@@ -40,10 +28,9 @@
 
     </div>
 
-    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script> --}}
-
+    </script>
     @vite('resources/js/app.js')
 </body>
 
