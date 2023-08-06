@@ -25,9 +25,11 @@
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
                 <select class="form-select" id="category" name="category">
-                    <option value="handphone">Handphone</option>
+
+                    <option value="hanphone">Handphone</option>
                     <option value="laptop">Laptop</option>
-                    <option value="elektronik lain">Elektronik Lain</option>
+                    <option value="elektronik_lain">Elektronik Lain</option>
+
                 </select>
                 @if ($errors->has('category'))
                     <span class="text-danger">{{ $errors->first('category') }} </span>

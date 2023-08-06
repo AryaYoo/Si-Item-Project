@@ -34,7 +34,9 @@
                 <select class="form-select" id="category" name="category" aria-valuetext="{{ $product->category }}">
                     <option value="handphone" @if ($product->category === 'handphone') selected @endif>Handphone</option>
                     <option value="laptop" @if ($product->category === 'laptop') selected @endif>Laptop</option>
-                    <option value="elektronik lain" @if ($product->category === 'elektronik lain') selected @endif>Elektronik Lain</option>
+
+                    <option value="elektronik_lain" @if ($product->category === 'elektronik_lain') selected @endif>Elektronik Lain</option>
+
                 </select>
                 @if ($errors->has('category'))
                     <span class="text-danger">{{ $errors->first('category') }} </span>
