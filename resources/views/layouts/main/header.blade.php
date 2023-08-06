@@ -2,7 +2,7 @@
     <div class="container">
         <div class="container-fluid d-grid gap-3 align-items-center justify-content-between"
             style="grid-template-columns: 1fr 2fr;">
-            <a href="{{ url('/') }}"
+            <a href="{{ url('dashboard') }}"
                 class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
                 <img src="{{Vite::asset('resources/images/Logo-SiBarang.png')}}" class="bi me-2" width="60" height="60">
             </a>
@@ -10,6 +10,7 @@
 
                 @if (Auth::check())
                     <div class="d-flex align-items-center">
+                        <?php $user = Auth::user(); ?>
                         <div class="w-100 me-3 d-flex align-items-center justify-content-end">
                             <a href="#" class="btn btn-warning btn-style">MAIL BOX</a>
                         </div>
