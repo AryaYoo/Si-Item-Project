@@ -12,10 +12,10 @@
             <a class="nav-link" href="#">SOROTAN</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">ARTIKEL</a>
+            <a class="nav-link" href="{{url('blog')}}">ARTIKEL</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">BANTUAN</a>
+            <a class="nav-link" href="{{route('faq')}}">BANTUAN</a>
         </li>
     </ul>
 @endsection
