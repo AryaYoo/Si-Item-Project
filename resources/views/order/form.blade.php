@@ -52,8 +52,8 @@
                     <div class="mb-3">
                         <label for="payment_method" class="form-label" style="color: black">Payment Method</label>
                         <select class="form-select" id="payment_method" name="payment_method" required>
-                            <option value="BCA">Bank BCA</option>
-                            <option value="BRI">Bank BRI</option>
+                            <option value="Transfer">Transfer</option>
+                            <option value="COD">COD</option>
                             <!-- Tambahkan metode pembayaran lainnya sesuai dengan kebutuhan -->
                         </select>
                         @error('payment_method')
