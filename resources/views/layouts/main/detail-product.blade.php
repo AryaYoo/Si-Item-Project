@@ -46,7 +46,7 @@
     <!-- Floating Action Button (FAB) -->
     <div class="position-fixed bottom-0 end-0 p-3">
         <a href="{{ url('products/create') }}" class="btn btn-warning btn-fab">
-            <i class="bi bi-plus"></i>
+            ADD
         </a>
     </div>
 

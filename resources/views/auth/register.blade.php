@@ -98,6 +98,13 @@
                             @endif
                         </div>
                         <div class="mb-3">
+                            <label for="alamat_lengkap" class="form-label">Nomor VA</label>
+                            <input type="text" class="form-control " id="no_va" name="no_va">
+                            @if ($errors->has('no_va'))
+                                <span class="text-danger">{{ $errors->first('no_va') }} </span>
+                            @endif
+                        </div>
+                        <div class="mb-3">
                             <label for="image" class="form-label">Add Photo</label>
                             <input type="file" class="form-control @error('image') is-invalid @enderror"
                                 id="image" accept=".png, .jpg, .jpeg" name="image">

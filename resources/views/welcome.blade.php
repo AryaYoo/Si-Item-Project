@@ -9,9 +9,6 @@
             <a class="nav-link active" aria-current="page" href="#">KATEGORI</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">SOROTAN</a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" href="#">ARTIKEL</a>
         </li>
         <li class="nav-item">

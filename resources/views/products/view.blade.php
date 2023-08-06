@@ -8,6 +8,7 @@
         $product_name = strtoupper($product->product_name);
         $category = strtoupper($product->category);
     @endphp
+
     <div class="pt-6 p-4 p-md-5 text-body-emphasis bg-body-secondary d-flex justify-content-center align-items-center">
         <img src="{{ asset("photos/products_photo/$product->image_path") }}" alt="{{ $product->product_name }}" width="400">
     </div>

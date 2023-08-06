@@ -51,6 +51,7 @@ class AuthController extends Controller
             'password' => 'required|min:6|confirmed',
             'kota_kabupaten' => 'required',
             'alamat_lengkap' => 'required',
+            'no_va' => 'required|min:16',
             'image' => [
                 'required',
                 File::image()
