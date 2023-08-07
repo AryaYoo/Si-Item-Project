@@ -43,6 +43,13 @@ class AuthController extends Controller
         return view('auth.register');
     }
 
+
+    public function showRegisterPaged()
+{
+    $registers = DB::table('register')->get(); // Ambil data dari tabel 'register'
+    return view('auth.register', ['registers' => $registers]);
+}
+
     public function register(Request $request)
     {
         Validator::validate($request->all(), [
@@ -78,5 +85,7 @@ class AuthController extends Controller
         ]);
 
         return redirect('login');
+
+
     }
 }

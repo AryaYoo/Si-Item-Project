@@ -11,7 +11,6 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
-
         .card-regist {
             margin: auto;
 
@@ -38,7 +37,8 @@
                 style="width: 35rem; height: auto;
                 background-color: #213655; border-radius: 1rem; ;">
                 <div class="card-body">
-                    <img src="{{Vite::asset('resources/images/Logo-SiBarang.png')}}" alt="Logo 1" width="40" height="40">
+                    <img src="{{ Vite::asset('resources/images/Logo-SiBarang.png') }}" alt="Logo 1" width="40"
+                        height="40">
                     <br>
 
                     <h3
